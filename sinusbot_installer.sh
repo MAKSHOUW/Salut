@@ -604,11 +604,11 @@ if [ "$DISCORD" == "false" ]; then
 
 greenMessage "Searching latest TS3-Client build for hardware type $MACHINE with arch $ARCH."
 
-VERSION="3.2.5"
+VERSION="3.3.0"
 
 #VERSION=$(wget -qO - 'https://sinusbot-installer.de/ts3version')
 
-DOWNLOAD_URL_VERSION="https://files.teamspeak-services.com/releases/server/3.9.1/teamspeak3-server_linux_amd64-3.9.1.tar.bz2"
+DOWNLOAD_URL_VERSION="https://files.teamspeak-services.com/releases/client/3.3.0/TeamSpeak3-Client-linux_amd64-3.3.0.run"
  STATUS=$(wget --server-response -L $DOWNLOAD_URL_VERSION 2>&1 | awk '/^  HTTP/{print $2}')
   if [ "$STATUS" == "200" ]; then
     DOWNLOAD_URL=$DOWNLOAD_URL_VERSION
